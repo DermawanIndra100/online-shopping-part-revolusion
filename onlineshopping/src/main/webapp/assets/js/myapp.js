@@ -1,7 +1,7 @@
 $(function(){
 	
 	//solving the active menu problem
-	switch(menu) {
+	switch(menu) { //menu itu ngambil dari page.jsp window.menu
 	
 		case 'About Us':
 			$('#about').addClass('active');
@@ -17,7 +17,7 @@ $(function(){
 			break;
 		default:
 			$('listProducts').addClass('active');
-			$('#a_' +menu).addClass('active');
+			$('#a_'+menu).addClass('active');
 			break;
 	}
 	
